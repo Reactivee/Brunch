@@ -1,6 +1,3 @@
-importScripts("https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js")
-importScripts("https://www.gstatic.com/firebasejs/8.6.8/firebase-messaging.js")
-
 
 var firebaseConfig = {
     apiKey: "AIzaSyDchja-jCw2u3DPlIEaE1_LrVNJjh7kxSo",
@@ -31,7 +28,7 @@ messaging
 
         console.log("Unable to get permission to notify.", err);
     });
-    
+
 messaging.onMessage(function (payload) {
     console.log("Message", payload)
 })
